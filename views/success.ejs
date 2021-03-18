@@ -5,6 +5,11 @@
 <p><%= summary %></p>
 <h3><%= released %></h3>
 <h3><%= genres %></h3>
-<h1><%= url %></h1>
-<iframe src="<%= url %>" title="description" width="600" height="400"></iframe>
-<%- include('footer.ejs') %>
+<div class="container">
+  <iframe
+    allowfullscreen="true"
+    class="responsive-iframe"
+    src="<%= url %>"
+  ></iframe>
+  <%- include('footer.ejs') %>
+</div>
